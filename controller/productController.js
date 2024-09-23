@@ -4,7 +4,7 @@ import fs from 'fs'
 // add product item
 
 const addProduct = async (req,res) => {
-let image_file = `${req.file.filename}`;
+// let image_file = `${req.file.filename}`;
  const product = new productModel({
     name:req.body.name,
     image:req.body.image_file,
